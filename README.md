@@ -4,8 +4,8 @@ A simple project created during the CodersCamp workshop. It is a first project w
 
 ## Requirements
 
-- [] transparent site, visible text, objects do not overlap
-- [] website must be responsive
-- [] use id and class, flexbox or grid, one external font, one or more animation
-- [] readable code
+- [ ] transparent site, visible text, objects do not overlap
+- [ ] website must be responsive
+- [ ] use id and class, flexbox or grid, one external font, one or more animation
+- [ ] readable code
   
