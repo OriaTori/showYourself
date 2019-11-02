@@ -66,7 +66,7 @@ nav {
 }
 .block{
     width: 45vw;
-    height: 45vh;
+
     min-width: 100px;
     min-height: 100px;
     margin: auto;
@@ -75,7 +75,7 @@ nav {
     padding: 15px;
     color: var(--main-color);
     font-size: 1rem;
-    overflow: scroll;
+
 }
 .blockInfo{
     font-family: 'Montserrat', sans-serif;
