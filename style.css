@@ -1,0 +1,121 @@
+:root{
+    --main-font-color: rgb(224, 240, 252);
+    --main-color: rgb(14, 71, 114);
+    --main-bg-color: rgb(76, 150, 248);
+    --main-bg-content-color: rgba(225,240,250,0.95);
+}
+/* */
+body{
+    background-image: url("img/background.jpg");
+    background-size: cover;
+    box-sizing: border-box;
+    font-size: 24px;
+    min-height: 100vh;
+    color: var(--main-color);
+}
+body a {
+    text-decoration: none;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch; 
+    justify-content: center;
+    min-height: 100vh;
+    align-items: stretch;
+}
+nav {
+    position: sticky;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:center;
+
+}
+.navigation{
+    font-family: 'Quicksand', sans-serif;
+    align-self: flex-start;
+    background: var(--main-bg-color);
+    list-style: none;
+    font-weight: normal;
+    font-size: 1rem;  
+}
+.navigation a {
+    color: var(--main-font-color);
+    padding: 1em;
+}
+.navigation a:hover {
+    background: darken(var(--main-bg-color), 5%);
+    font-weight: bold;
+    transform: scale(1.5);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    min-width: 600px;
+    min-height: 600px;
+    background-color: rgba(4, 50, 88, 0.384);
+ 
+}
+.block{
+    width: 45vw;
+    height: 45vh;
+    min-width: 100px;
+    min-height: 100px;
+    margin: auto;
+    background-color: var(--main-bg-content-color);
+    border-radius: 25px;
+    padding: 15px;
+    color: var(--main-color);
+    font-size: 1rem;
+    overflow: scroll;
+}
+.blockInfo{
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(90deg,var(--main-bg-color),var(--main-bg-content-color));
+}
+.blockInfo li{
+    list-style-type: circle;
+}
+.showMoreInfo{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    word-wrap: break-word;
+    hyphens: auto;
+    background-image: linear-gradient(270deg,var(--main-bg-color),var(--main-bg-content-color));
+}
+.showMoreInfo p {
+    text-align: justify;
+    text-align-last: left;
+    word-wrap: break-word;
+}
+.photo{
+    background-image: linear-gradient(270deg,var(--main-bg-color),var(--main-bg-content-color));/*url("img/leak.jpg");*/
+ 
+    background-size: cover; 
+    background-position: center;
+}
+/*
+.photo:hover{
+    background-color: rgba(27, 93, 97, 0.384); 
+}*/
+.socialmedia{
+    background: var(--main-bg-color);
+    color: var(--main-font-color);
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    max-height: 50px;
+    font-size: 1rem;  
+}
+/*
+@media (max-width>300px){
+
+}
+*/
