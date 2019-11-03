@@ -34,6 +34,7 @@ nav {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+
 }
 .aboutMe{
     width: 5vw;
@@ -42,15 +43,29 @@ nav {
     background-color: gray;
     background-image: url("img/leak.jpg");
     background-size: cover;
+    position: relative;
+    animation: headingPhoto;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
 }
-
+.aboutMe:active {
+    top: 40vh;
+    left: -45vw;
+    transform: scale(10);
+}
 .navigation{
     font-family: 'Quicksand', sans-serif;
     flex-grow: 1;
     background: var(--main-bg-color);
     list-style: none;
     font-weight: normal;
-    font-size: 1rem;  
+    font-size: 1rem;
+    position: relative;
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;  
 }
 .navigation a {
     color: var(--main-font-color);
@@ -69,7 +84,10 @@ nav {
     align-content: flex-start;
     padding: 1vw;
     background-color: rgba(4, 50, 88, 0.384);
- 
+    position: relative;
+    animation: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 .block{
     margin: auto;
@@ -107,6 +125,10 @@ nav {
     justify-content: center;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
+    position: relative;
+    animation: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 .socialmedia{
     display: inline-flex;
@@ -225,3 +247,22 @@ nav {
     }
 }
 
+@keyframes heading {
+    0% {top: -20vh; opacity: 0.1;}
+    20% {   opacity: 0.2;}
+    40% {   opacity: 0.4;}
+    60% {   opacity: 0.6;}
+    80% {   opacity: 0.8;}
+    100% {top: 0;}
+}
+
+@keyframes headingPhoto {
+    0% {top: -30vh; left: -100vw; opacity: 0.2;}
+    50% {top: 0vh; left: -45vw; opacity: 0.5;}
+    100% {top: 0; left: 0; }
+}
+
+@keyframes content{
+    0% {bottom: -100vh; opacity: 0.5;}
+    100% {bottom: 0;}
+}
