@@ -5,7 +5,9 @@
     --main-bg-content-color: rgba(225,240,250,0.95);
     font-size: 18px;
 }
-
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 body{
     background-image: url("img/background.jpg");
     background-size: cover;
@@ -34,7 +36,9 @@ nav {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-
+}
+.menu:nth-child(2){
+    z-index: 2;
 }
 .aboutMe{
     width: 5vw;
@@ -45,15 +49,15 @@ nav {
     background-size: cover;
     position: relative;
     animation: headingPhoto;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
-    transition-delay: 1s;
     transition-timing-function: ease-in-out;
 }
 .aboutMe:active {
-    top: 40vh;
-    left: -45vw;
-    transform: scale(10);
+    animation: photo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out;
 }
 .navigation{
     font-family: 'Quicksand', sans-serif;
@@ -257,12 +261,17 @@ nav {
 }
 
 @keyframes headingPhoto {
-    0% {top: -30vh; left: -100vw; opacity: 0.2;}
-    50% {top: 0vh; left: -45vw; opacity: 0.5;}
-    100% {top: 0; left: 0; }
+    0% {top: 0vh; left: -100vw; opacity: 0.2;}
+    100% {top: 0; left: 0; opacity: 0.8; }
 }
 
 @keyframes content{
     0% {bottom: -100vh; opacity: 0.5;}
     100% {bottom: 0;}
+}
+
+@keyframes photo{
+    0% {top: 0vh; left: 0vw; transform: scale(1); }
+    50% {top: 30vh; left: -45vw; transform: scale(6); }
+    100% {top: 0; left: 0; transform: scale(1); }
 }
