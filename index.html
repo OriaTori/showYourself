@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title> Show Yourself</title>
         <meta name="description" content="A simple project created during the CodersCamp workshop.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="CodersCamp, html, css, simple project">
         <meta name="author" content="Martyna">
         <link rel="stylesheet" href="style.css" type="text/css">
@@ -15,18 +15,22 @@
     <body>
         <div class="wrapper">
             <header></header>
-            <nav > 
+            <nav class="menu"> 
                 <ul class="menu navigation">
-                    <li> <a href="#" title="Home Page"> Home </a></li>
-                    <li> <a href="#" title="About Page"> About </a></li>
-                    <li> <a href="#" title="Hobby Page"> Hobby </a></li>
+                    <li> <a href="#" title="AboutMe Page" class="icon-user-circle"> About me </a></li>
+                    <li> <a href="#" title="Work Page"> Work experience </a></li>
+                    <li> <a href="#" title="Education Page"> Education </a></li>
+                    <li> <a href="#" title="Skills Page"> Skills </a></li>
                     <li> <a href="#" title="Contact Page"> Contact </a></li>
                 </ul>
+                <span class="aboutMe">
+                    <p ></p>
+                </span>
             </nav>
             <main class="container">
                 <section class="block blockInfo">
-                        <h1> Name Surename </h1>
-                        <h2> Work expirence </h2>
+                        <h1> Name Surname </h1>
+                        <h2> Work experience </h2>
                         <ul>
                             <li> I work here </li>
                             <li> and here I worked </li>
@@ -41,12 +45,12 @@
                         </ul>
                         <h2> Skills </h2>
                         <ul>
-                            <li> Some University </li>
-                            <li> Maybe College </li>
-                            <li> or High School </li>
+                            <li> Something in programming </li>
+                            <li> Some math skills </li>
+                            <li> Socials skills </li>
                         </ul>
                 </section>
-                <section class="block showMoreInfo photo">
+                <section class="block showMoreInfo">
                 <!--  -->
                     More information about you! <br>
                     Show what you got! <br>
@@ -81,17 +85,19 @@
                 </section>    
             </main>
             
-            <footer class="menu socialmedia"> 
-                <span class="menu">social media: 
+            <footer class="menufooter"> 
+                <span class="socialmedia">
                     <div><a href="http://facebook.com" target="_blank"><i class="icon-facebook-squared"></i></a></div>
                     <div><a href="http://linkedin.com" target="_blank"><i class="icon-linkedin-squared"></i></a></div>
                     <div><a href="http://github.com" target="_blank"><i class="icon-github-squared"></i></a></div>
                     <div><a href="http://meetup.com" target="_blank"><i class="icon-meetup"></i></a></div>
                 </span>  
-                <span>Contact: 
-                    <i class="icon-mail">yourname@gmail.com</i><i class="icon-home">Home Address</i>
+                <span id="contact">Contact: <br>
+                    <i class="icon-mail">yourname@gmail.com</i>
+                    <i class="icon-home">Home Address Street Number</i>
+                    
                 </span> 
-                <span> &copy; </span>
+                <span id="licence"> Don't copy it's not worthy &copy; </span>
             </footer>
         </div>
     </body>
